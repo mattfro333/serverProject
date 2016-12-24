@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="wordsApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css"></link>
+  </head>
+  <body>
+    <nav>
+
+<p ui-sref="home">Home</p>
+      <p ui-sref="rhymes">Rhymes</p>
+        <p ui-sref="definitions">Definitions</p>
+</nav>
+
+
+
+<ui-view></ui-view>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+
+    <script src="./app.js"></script>
+    <script src="./js/controller/homeCtrl.js"></script>
+     <script src="./js/controller/rhymesCtrl.js"></script>
+    <!-- <script src="./js/controller/definitionsCtrl.js"></script> -->
+    <script src="./js/services/mainService.js"></script>
+    <script src="./js/directives/rhymeDirective.js"></script>
+  </body>
+  </body>
+</html>

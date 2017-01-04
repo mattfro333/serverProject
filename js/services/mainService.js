@@ -6,4 +6,11 @@ angular.module('wordsApp').service('mainService', function($http, $q){
       })
     }
 
+    this.getSynonyms = function(nom){
+      return $http({
+        method: 'GET',
+        url: 'https://api.datamuse.com/words?ml='+ nom
+      })
+    }
+
 });

@@ -12,5 +12,10 @@ angular.module('wordsApp',['ui.router'])
         templateUrl: './views/rhymes.html',
         controller: 'rhymesCtrl'
       })
+      .state('synonyms', {
+        url: '/synonyms',
+        templateUrl: './views/synonyms.html',
+        controller: 'synonymsCtrl'
+      })
       $urlRouterProvider.otherwise('/')
   })
